@@ -7,5 +7,6 @@ terraform {
 }
 
 resource "yandex_vpc_gateway" "gw" {
-  name = var.name 
+  name = var.name
+  shared_egress_gateway {}
 }
